@@ -1,0 +1,75 @@
+/* App Styles */
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-logo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.app-content {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: calc(100vh - 56px);
+}
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 32px;
+}
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.auth-form .ant-form-item:last-child {
+  margin-bottom: 0;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.dashboard-card {
+  margin-bottom: 24px;
+}
+
+.user-info {
+  background: #f6f8fa;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.loading-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

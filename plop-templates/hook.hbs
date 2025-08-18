@@ -1,0 +1,30 @@
+import { useQuery, useMutation } from '@apollo/client';
+import { GET_{{constantCase name}}_QUERY, CREATE_{{constantCase name}}_MUTATION } from '../graphql/{{name}}.graphql';
+
+export const use{{properCase name}} = () => {
+  const { data, loading, error, refetch } = useQuery(GET_{{constantCase name}}_QUERY);
+
+  const [create{{properCase name}}, { loading: creating }] = useMutation(CREATE_{{constantCase name}}_MUTATION, {
+    refetchQueries: [{ query: GET_{{constantCase name}}_QUERY }],
+  });
+
+  const handle{{properCase name}}Create = async (input: any) => {
+    try {
+      await create{{properCase name}}({
+        variables: { input },
+      });
+    } catch (error) {
+      console.error('Failed to create {{name}}:', error);
+      throw error;
+    }
+  };
+
+  return {
+    {{name}}: data?.{{name}} || [],
+    loading,
+    error,
+    creating,
+    refetch,
+    create: handle{{properCase name}}Create,
+  };
+};

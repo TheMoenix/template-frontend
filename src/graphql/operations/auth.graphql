@@ -1,0 +1,52 @@
+mutation Register($input: RegisterInput!) {
+  register(input: $input) {
+    accessToken
+    user {
+      id
+      email
+      role
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation Login($input: LoginInput!) {
+  login(input: $input) {
+    accessToken
+    user {
+      id
+      email
+      role
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation RefreshToken {
+  refreshToken {
+    accessToken
+    user {
+      id
+      email
+      role
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation Logout {
+  logout
+}
+
+query Me {
+  me {
+    id
+    email
+    role
+    createdAt
+    updatedAt
+  }
+}

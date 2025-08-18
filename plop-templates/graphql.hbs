@@ -1,0 +1,23 @@
+import { gql } from '@apollo/client';
+
+export const GET_{{constantCase name}}_QUERY = gql`
+  query Get{{properCase name}} {
+    {{name}} {
+      id
+      name
+      createdAt
+      updatedAt
+    }
+  }
+`;
+
+export const CREATE_{{constantCase name}}_MUTATION = gql`
+  mutation Create{{properCase name}}($input: Create{{properCase name}}Input!) {
+    create{{properCase name}}(input: $input) {
+      id
+      name
+      createdAt
+      updatedAt
+    }
+  }
+`;
