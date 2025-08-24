@@ -1,3 +1,8 @@
+/* Reset default body margin */
+body {
+  margin: 0;
+}
+
 /* App Styles */
 .app-layout {
   min-height: 100vh;

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Card, message } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
-import { useRegisterMutation } from '@/graphql/generated';
 import { authStore } from '@/store/auth.store';
+import { useRegisterMutation } from '@/graphql/generated/hooks';
 
 interface RegisterForm {
   email: string;

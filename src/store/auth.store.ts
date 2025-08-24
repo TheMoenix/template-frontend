@@ -1,7 +1,8 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { apolloClient } from '@/lib/apollo';
-import { User, RefreshTokenDocument } from '@/graphql/generated';
+import { User } from '@/graphql/generated/schemas';
+import { RefreshTokenDocument } from '@/graphql/generated/hooks';
 
 interface AuthState {
   accessToken: string | null;

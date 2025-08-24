@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Descriptions, Typography } from 'antd';
-import { useMeQuery } from '@/graphql/generated';
 import { dayjs } from '@/lib/dayjs';
+import { useMeQuery } from '@/graphql/generated/hooks';
 
 const { Title } = Typography;
 

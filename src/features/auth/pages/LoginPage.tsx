@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Card, message } from 'antd';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { useLoginMutation } from '@/graphql/generated';
 import { authStore } from '@/store/auth.store';
+import { useLoginMutation } from '@/graphql/generated/hooks';
 
 interface LoginForm {
   email: string;

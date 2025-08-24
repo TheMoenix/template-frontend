@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, Menu, Avatar, Dropdown, Button } from 'antd';
 import { UserOutlined, LogoutOutlined } from '@ant-design/icons';
 import { authStore } from '@/store/auth.store';
-import { useLogoutMutation } from '@/graphql/generated';
+import { useLogoutMutation } from '@/graphql/generated/hooks';
 
 const { Header, Content, Sider } = Layout;
 
